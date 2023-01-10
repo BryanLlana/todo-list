@@ -1,6 +1,7 @@
 import cookieParser from 'cookie-parser'
 import express from 'express'
 import usuarioRoutes from './routes/usuarioRoutes.js'
+import tareaRoutes from './routes/todoRoutes.js'
 import db from './config/db.js'
 
 const app = express()
@@ -28,6 +29,7 @@ app.set('views', './views')
 app.use(express.static('public'))
 
 app.use('/auth', usuarioRoutes)
+app.use('/', tareaRoutes)
 
 const PORT = process.env.PORT || 3000
 app.listen(3000, ()=>{

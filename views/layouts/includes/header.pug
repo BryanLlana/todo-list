@@ -1,0 +1,10 @@
+header.bg-indigo-600.p-4
+    div.container.mx-auto.flex.justify-between.items-center
+        a(href="/tareas") 
+            h1.text-2xl.text-white.font-extrabold.text-center Todo
+                span.font-normal List 
+
+        nav(class="invisible md:flex md:visible md:items-center md:gap-3").my-5.text-sm.font-bold.text-white
+            a(href="/tareas") Tareas de #{usuario.nombre}
+            form(action="/auth/cerrar-sesion" method="post") 
+                input(type="submit" value="Cerrar Sesión").bg-indigo-800.py-2.px-10.rounded-lg 
