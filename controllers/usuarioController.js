@@ -134,7 +134,7 @@ const confirmar = async(req, res) => {
 
 const formularioOlvidePassword = (req, res) => {
     res.render('auths/olvide-password', {
-        pagina: 'Recupera tu acceso a Bienes Raíces'
+        pagina: 'Recupera tu acceso a TodoList'
     })
 }
 
